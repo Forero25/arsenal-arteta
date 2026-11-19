@@ -15,7 +15,23 @@ def con():
     return duckdb.connect("data/premier.duckdb", read_only=True)
 
 
+def _redondear(o, d=9):
+    """DuckDB suma en paralelo y el orden cambia los últimos decimales; se redondea para que los archivos no cambien sin motivo."""
+    if isinstance(o, float):
+        return round(o, d)
+    if isinstance(o, dict):
+        return {k: _redondear(v, d) for k, v in o.items()}
+    if isinstance(o, (list, tuple)):
+        return [_redondear(v, d) for v in o]
+    if isinstance(o, (np.floating,)):
+        return round(float(o), d)
+    if isinstance(o, (np.integer,)):
+        return int(o)
+    return o
+
+
 def guardar(nombre, obj):
+    obj = _redondear(obj)
     os.makedirs(RES, exist_ok=True)
     json.dump(obj, open(f"{RES}/{nombre}.json", "w"), ensure_ascii=False, indent=1, default=float)
 
@@ -88,7 +104,7 @@ def mercado(c, nombres):
     out = {}
     for n in nombres:
         x = c.sql(f"""SELECT pts - pts_esperados_mercado AS s FROM etapa_partido
-                      WHERE entrenador = '{n.replace("'", "''")}' AND pts_esperados_mercado IS NOT NULL""").df().s
+                      WHERE entrenador = '{n.replace("'", "''")}' AND pts_esperados_mercado IS NOT NULL ORDER BY fecha, id""").df().s
         out[n] = {"pj": int(len(x)), "sobre_mercado_pp": float(x.mean()), "ic95": bootstrap_media(x),
                   "por_38": float(x.mean() * 38)}
     return out
@@ -107,11 +123,14 @@ def clusteres(c, min_pj=100):
     base = c.sql("""SELECT entrenador, count(*) pj, avg(pts) ppp, avg(gf) gf_pp, avg(gc) gc_pp,
                            avg(tiros / nullif(tiros + tiros_rival, 0)) cuota_tiros,
                            avg(pts - pts_esperados_mercado) sobre_mercado_pp
-                    FROM etapa_partido WHERE temporada >= 2000 GROUP BY entrenador""").df()
+                    FROM etapa_partido WHERE temporada >= 2000 GROUP BY entrenador ORDER BY entrenador""").df()
     var = c.sql("SELECT entrenador, stddev_samp(ppp) variabilidad FROM gestion_temporada WHERE pj >= 19 AND temporada >= 2000 GROUP BY entrenador").df()
     cons = construccion(c).groupby("entrenador").subida.max().rename("subida_max").reset_index()
     tit = c.sql("SELECT entrenador, titulos FROM carrera").df()
     df = base[base.pj >= min_pj].merge(var, on="entrenador", how="left").merge(cons, on="entrenador", how="left").merge(tit, on="entrenador")
+    df = df.sort_values("entrenador").reset_index(drop=True)
+    for f in ["ppp", "gf_pp", "gc_pp", "cuota_tiros", "sobre_mercado_pp", "subida_max", "variabilidad"]:
+        df[f] = df[f].round(9)   # evita que el ruido de la suma en paralelo cambie la elección de k
     feats = ["ppp", "gf_pp", "gc_pp", "cuota_tiros", "sobre_mercado_pp", "subida_max", "variabilidad"]
     df["subida_max"] = df["subida_max"].fillna(df["subida_max"].median())
     df["variabilidad"] = df["variabilidad"].fillna(df["variabilidad"].median())
