@@ -8,7 +8,7 @@ import pandas as pd
 sys.path.insert(0, os.path.dirname(__file__))
 RES = "resultados"
 GRANDES_MIN_PJ, GRANDES_MIN_PPP = 300, 1.9   # regla de datos para "los grandes" (ver README)
-RNG = np.random.default_rng(2026)
+SEMILLA = 2026  # cada función crea su propio generador: resultados idénticos en cualquier máquina
 
 
 def con():
@@ -30,7 +30,7 @@ def bootstrap_media(x, n=4000):
     x = x[~np.isnan(x)]
     if len(x) < 5:
         return [np.nan, np.nan]
-    idx = RNG.integers(0, len(x), (n, len(x)))
+    idx = np.random.default_rng(SEMILLA).integers(0, len(x), (n, len(x)))
     m = x[idx].mean(axis=1)
     return [float(np.percentile(m, 2.5)), float(np.percentile(m, 97.5))]
 
@@ -184,15 +184,17 @@ def _umbral(t, hasta=None):
     return np.array(out, float)
 
 
-def p_titulo(pts_previos, coef, sd, umbrales, n=20000):
-    pts = coef[0] + coef[1] * pts_previos + RNG.normal(0, sd, n)
-    return float((pts > RNG.choice(umbrales, n)).mean())
+def p_titulo(pts_previos, coef, sd, umbrales, n=20000, rng=None):
+    rng = rng or np.random.default_rng(SEMILLA)
+    pts = coef[0] + coef[1] * pts_previos + rng.normal(0, sd, n)
+    return float((pts > rng.choice(umbrales, n)).mean())
 
 
 def calibracion_simulacion(c):
     """Validación hacia adelante: para cada temporada desde 2005-06, se estima el modelo solo con el pasado y se
     predice la probabilidad de título de los 6 mejores de la temporada anterior. Se compara con lo que pasó."""
     t = _tablas(c)
+    rng = np.random.default_rng(SEMILLA)
     filas = []
     for temp in range(2005, int(t.temporada.max()) + 1):
         coef, sd = _modelo_puntos(t, hasta=temp - 1)
@@ -200,7 +202,7 @@ def calibracion_simulacion(c):
         prev = t[(t.temporada == temp - 1) & (t.puesto <= 6)]
         camp = t[(t.temporada == temp) & (t.puesto == 1)].club.iloc[0]
         for _, f in prev.iterrows():
-            filas.append({"temporada": temp, "club": f.club, "p": p_titulo(f.pts, coef, sd, um, 5000), "campeon": f.club == camp})
+            filas.append({"temporada": temp, "club": f.club, "p": p_titulo(f.pts, coef, sd, um, 5000, rng), "campeon": f.club == camp})
     d = pd.DataFrame(filas)
     d["tramo"] = pd.cut(d.p, [0, .1, .25, .5, 1], include_lowest=True, labels=["0-10 %", "10-25 %", "25-50 %", "50-100 %"]).astype(str)
     tabla = d.groupby("tramo").agg(n=("p", "size"), p_media=("p", "mean"), frecuencia=("campeon", "mean")).reset_index()
@@ -230,6 +232,7 @@ def simulacion(c, n=20000, horizonte=8):
     actual = pronostico_actual()
     ultimo = float(t[(t.club == "Arsenal") & (t.temporada == t.temporada.max())].pts.iloc[0])
     p0 = actual.get("p_campeon", np.nan)
+    RNG = np.random.default_rng(SEMILLA)
     pts = np.full(n, ultimo)
     titulos = np.zeros((n, horizonte), int)
     for h in range(horizonte):
