@@ -2,7 +2,7 @@
 
 ¿Dónde está Mikel Arteta frente a los grandes entrenadores de la Premier League, y qué tendría que pasar para alcanzarlos? Arsenal ganó la liga 2025-26 con él, su primer título en 22 años. Este repositorio compara su proceso con el de Ferguson, Wenger, Mourinho, Guardiola y Klopp, partido a partido, desde 1993-94.
 
-- **App interactiva** (Shiny for Python): `app.py`, publicada en Posit Connect Cloud.
+- **App interactiva** (Shiny for Python): `app.py`, publicada en [Posit Connect Cloud](https://01a1f297-a04e-16bc-6933-c0d05dc9ade0.share.connect.posit.cloud/).
 - **Artículo:** [nicolasforero.pages.dev/escritos/arteta](https://nicolasforero.pages.dev/escritos/arteta/)
 - **Método explicado y glosario:** [METODO.md](METODO.md)
 
