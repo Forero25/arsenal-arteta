@@ -22,7 +22,7 @@
   "club": "Manchester United",
   "pts": 91.0,
   "entrenador": "Alex Ferguson",
-  "elo_fin": 1695.452870021176,
+  "elo_fin": 1695.4528700211758,
   "sobre_mercado_pp": NaN,
   "pts_segundo": 73.0
  },
@@ -32,7 +32,7 @@
   "pts": 90.0,
   "entrenador": "Arsène Wenger",
   "elo_fin": 1695.1852448569143,
-  "sobre_mercado_pp": 0.3890031833720973,
+  "sobre_mercado_pp": 0.3890031833720974,
   "pts_segundo": 79.0
  },
  {
@@ -40,7 +40,7 @@
   "club": "Manchester United",
   "pts": 89.0,
   "entrenador": "Alex Ferguson",
-  "elo_fin": 1692.7615546572515,
+  "elo_fin": 1692.7615546572513,
   "sobre_mercado_pp": 0.273515877440701,
   "pts_segundo": 83.0
  },
@@ -49,7 +49,7 @@
   "club": "Manchester United",
   "pts": 87.0,
   "entrenador": "Alex Ferguson",
-  "elo_fin": 1691.8700117414355,
+  "elo_fin": 1691.8700117414353,
   "sobre_mercado_pp": 0.16985385336683823,
   "pts_segundo": 85.0
  },
@@ -58,7 +58,7 @@
   "club": "Manchester United",
   "pts": 80.0,
   "entrenador": "Alex Ferguson",
-  "elo_fin": 1691.3309195986794,
+  "elo_fin": 1691.3309195986792,
   "sobre_mercado_pp": 0.14787320255776124,
   "pts_segundo": 70.0
  },
@@ -85,7 +85,7 @@
   "club": "Manchester City",
   "pts": 89.0,
   "entrenador": "Pep Guardiola",
-  "elo_fin": 1689.1355321840647,
+  "elo_fin": 1689.1355321840645,
   "sobre_mercado_pp": 0.032271876011813694,
   "pts_segundo": 84.0
  },
@@ -94,7 +94,7 @@
   "club": "Manchester City",
   "pts": 91.0,
   "entrenador": "Pep Guardiola",
-  "elo_fin": 1688.9754196662848,
+  "elo_fin": 1688.9754196662846,
   "sobre_mercado_pp": 0.09990330033401235,
   "pts_segundo": 89.0
  },
@@ -103,7 +103,7 @@
   "club": "Chelsea",
   "pts": 86.0,
   "entrenador": "Carlo Ancelotti",
-  "elo_fin": 1685.0566779799017,
+  "elo_fin": 1685.0566779799015,
   "sobre_mercado_pp": 0.08797115532943693,
   "pts_segundo": 85.0
  },
@@ -148,7 +148,7 @@
   "club": "Manchester United",
   "pts": 83.0,
   "entrenador": "Alex Ferguson",
-  "elo_fin": 1679.0801302876985,
+  "elo_fin": 1679.0801302876982,
   "sobre_mercado_pp": 0.2439736750782276,
   "pts_segundo": 78.0
  },
@@ -166,7 +166,7 @@
   "club": "Arsenal",
   "pts": 87.0,
   "entrenador": "Arsène Wenger",
-  "elo_fin": 1666.9370240270127,
+  "elo_fin": 1666.9370240270125,
   "sobre_mercado_pp": 0.4279625413463349,
   "pts_segundo": 80.0
  },
@@ -175,7 +175,7 @@
   "club": "Manchester United",
   "pts": 80.0,
   "entrenador": "Alex Ferguson",
-  "elo_fin": 1665.0509355249762,
+  "elo_fin": 1665.050935524976,
   "sobre_mercado_pp": 0.08992242310551744,
   "pts_segundo": 71.0
  },
@@ -184,7 +184,7 @@
   "club": "Manchester City",
   "pts": 86.0,
   "entrenador": "Manuel Pellegrini",
-  "elo_fin": 1664.20078639093,
+  "elo_fin": 1664.2007863909298,
   "sobre_mercado_pp": 0.14273827271871503,
   "pts_segundo": 84.0
  },
@@ -193,7 +193,7 @@
   "club": "Manchester City",
   "pts": 86.0,
   "entrenador": "Pep Guardiola",
-  "elo_fin": 1659.5370742329617,
+  "elo_fin": 1659.5370742329615,
   "sobre_mercado_pp": -0.008858793179309586,
   "pts_segundo": 74.0
  },
@@ -220,7 +220,7 @@
   "club": "Chelsea",
   "pts": 87.0,
   "entrenador": "José Mourinho",
-  "elo_fin": 1645.4531148395229,
+  "elo_fin": 1645.4531148395226,
   "sobre_mercado_pp": 0.2075355077583595,
   "pts_segundo": 79.0
  },
@@ -292,7 +292,7 @@
   "club": "Leicester City",
   "pts": 81.0,
   "entrenador": "Claudio Ranieri",
-  "elo_fin": 1512.8826709145083,
+  "elo_fin": 1512.882670914508,
   "sobre_mercado_pp": 0.7341750961296473,
   "pts_segundo": 71.0
  }
