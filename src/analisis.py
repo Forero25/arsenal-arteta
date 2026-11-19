@@ -18,13 +18,13 @@ def con():
 def _redondear(o, d=9):
     """DuckDB suma en paralelo y el orden cambia los últimos decimales; se redondea para que los archivos no cambien sin motivo."""
     if isinstance(o, float):
-        return round(o, d)
+        return None if o != o else round(o, d)   # NaN no es JSON válido
     if isinstance(o, dict):
         return {k: _redondear(v, d) for k, v in o.items()}
     if isinstance(o, (list, tuple)):
         return [_redondear(v, d) for v in o]
     if isinstance(o, (np.floating,)):
-        return round(float(o), d)
+        return None if o != o else round(float(o), d)
     if isinstance(o, (np.integer,)):
         return int(o)
     return o
@@ -33,7 +33,7 @@ def _redondear(o, d=9):
 def guardar(nombre, obj):
     obj = _redondear(obj)
     os.makedirs(RES, exist_ok=True)
-    json.dump(obj, open(f"{RES}/{nombre}.json", "w"), ensure_ascii=False, indent=1, default=float)
+    json.dump(obj, open(f"{RES}/{nombre}.json", "w"), ensure_ascii=False, indent=1, default=float, allow_nan=False)
 
 
 def grandes(c):

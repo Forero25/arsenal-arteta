@@ -23,7 +23,7 @@
   "pts": 91.0,
   "entrenador": "Alex Ferguson",
   "elo_fin": 1695.452870021,
-  "sobre_mercado_pp": NaN,
+  "sobre_mercado_pp": null,
   "pts_segundo": 73.0
  },
  {
@@ -158,7 +158,7 @@
   "pts": 79.0,
   "entrenador": "Alex Ferguson",
   "elo_fin": 1671.11806269,
-  "sobre_mercado_pp": NaN,
+  "sobre_mercado_pp": null,
   "pts_segundo": 78.0
  },
  {
@@ -203,7 +203,7 @@
   "pts": 75.0,
   "entrenador": "Alex Ferguson",
   "elo_fin": 1655.141278349,
-  "sobre_mercado_pp": NaN,
+  "sobre_mercado_pp": null,
   "pts_segundo": 68.0
  },
  {
@@ -212,7 +212,7 @@
   "pts": 82.0,
   "entrenador": "Alex Ferguson",
   "elo_fin": 1651.326135469,
-  "sobre_mercado_pp": NaN,
+  "sobre_mercado_pp": null,
   "pts_segundo": 78.0
  },
  {
@@ -248,7 +248,7 @@
   "pts": 78.0,
   "entrenador": "Arsène Wenger",
   "elo_fin": 1627.706943029,
-  "sobre_mercado_pp": NaN,
+  "sobre_mercado_pp": null,
   "pts_segundo": 77.0
  },
  {
@@ -266,7 +266,7 @@
   "pts": 89.0,
   "entrenador": "Kenny Dalglish",
   "elo_fin": 1625.523043868,
-  "sobre_mercado_pp": NaN,
+  "sobre_mercado_pp": null,
   "pts_segundo": 88.0
  },
  {
@@ -284,7 +284,7 @@
   "pts": 92.0,
   "entrenador": "Alex Ferguson",
   "elo_fin": 1607.615691254,
-  "sobre_mercado_pp": NaN,
+  "sobre_mercado_pp": null,
   "pts_segundo": 84.0
  },
  {
