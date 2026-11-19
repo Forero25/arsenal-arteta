@@ -3,6 +3,8 @@ on:
   workflow_dispatch:
   push:
     paths: ["src/descargar.py", ".github/workflows/datos-crudos.yml"]
+permissions:
+  contents: write
 jobs:
   bajar:
     runs-on: ubuntu-latest
@@ -11,5 +13,9 @@ jobs:
       - uses: actions/setup-python@v5
         with: {python-version: "3.12"}
       - run: python src/descargar.py
-      - uses: actions/upload-artifact@v4
-        with: {name: crudos, path: data/raw, retention-days: 30}
+      - name: Publicar en el release "crudos" (fuentes citadas en el README)
+        env: {GH_TOKEN: "${{ github.token }}"}
+        run: |
+          cd data && zip -qr ../crudos.zip raw && cd ..
+          gh release view crudos >/dev/null 2>&1 || gh release create crudos --title "Datos crudos" --notes "Copia de trabajo de football-data.co.uk (resultados, tiros y cuotas de la Premier League) y de Wikipedia (CC BY-SA 4.0). Ver README para fuentes y términos."
+          gh release upload crudos crudos.zip --clobber
