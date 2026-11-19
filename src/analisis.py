@@ -126,7 +126,10 @@ def clusteres(c, min_pj=100):
     ward = AgglomerativeClustering(k, linkage="ward").fit(Z)
     pca = PCA(2).fit(Z)
     P = pca.transform(Z)
-    df["grupo"], df["pc1"], df["pc2"] = km.labels_, P[:, 0], P[:, 1]
+    # numerar los grupos de mayor a menor puntos por partido, para que "grupo 0" sea siempre el de más nivel
+    orden = pd.Series(km.labels_).groupby(km.labels_).apply(lambda i: df.ppp.iloc[i.index].mean()).sort_values(ascending=False)
+    mapa = {g: i for i, g in enumerate(orden.index)}
+    df["grupo"], df["pc1"], df["pc2"] = [mapa[x] for x in km.labels_], P[:, 0], P[:, 1]
     perfiles = df.groupby("grupo")[feats + ["pj"]].mean().reset_index()
     perfiles["n"] = df.groupby("grupo").size().values
     # Arteta por tramos de su etapa
@@ -137,7 +140,7 @@ def clusteres(c, min_pj=100):
                              avg(pts - pts_esperados_mercado) sobre_mercado_pp
                       FROM etapa_partido WHERE entrenador='Mikel Arteta' AND {cond}""").df().iloc[0].to_dict()
         v = pd.DataFrame([{**r, "subida_max": fila.subida_max, "variabilidad": fila.variabilidad}])[feats]
-        tramos[nombre] = {"grupo": int(km.predict(esc.transform(v))[0]), **{f: float(v[f].iloc[0]) for f in feats}}
+        tramos[nombre] = {"grupo": mapa[int(km.predict(esc.transform(v))[0])], **{f: float(v[f].iloc[0]) for f in feats}}
     # ¿A quién se parece Arteta? Distancia en las variables estandarizadas, solo dentro de su grupo
     za = Z[df.entrenador.values == "Mikel Arteta"][0]
     df["distancia_arteta"] = np.sqrt(((Z - za) ** 2).sum(axis=1))
@@ -199,7 +202,7 @@ def calibracion_simulacion(c):
         for _, f in prev.iterrows():
             filas.append({"temporada": temp, "club": f.club, "p": p_titulo(f.pts, coef, sd, um, 5000), "campeon": f.club == camp})
     d = pd.DataFrame(filas)
-    d["tramo"] = pd.cut(d.p, [0, .1, .25, .5, 1], include_lowest=True).astype(str)
+    d["tramo"] = pd.cut(d.p, [0, .1, .25, .5, 1], include_lowest=True, labels=["0-10 %", "10-25 %", "25-50 %", "50-100 %"]).astype(str)
     tabla = d.groupby("tramo").agg(n=("p", "size"), p_media=("p", "mean"), frecuencia=("campeon", "mean")).reset_index()
     brier = float(np.mean((d.p - d.campeon) ** 2))
     base = float(np.mean((d.campeon.mean() - d.campeon) ** 2))
@@ -254,13 +257,21 @@ def main():
     c = con()
     g = grandes(c)
     nombres = sorted(set(g) | {"Mikel Arteta"})
-    t, serie = trayectorias(c, nombres)
+    todos = c.sql("SELECT entrenador FROM carrera WHERE pj >= 100").df().entrenador.tolist()
+    t, serie = trayectorias(c, todos)
     guardar("validacion", validacion(c))
     guardar("modelos", modelos(c))
     guardar("grandes", {"regla": {"min_pj": GRANDES_MIN_PJ, "min_ppp": GRANDES_MIN_PPP}, "grandes": g,
                         "carrera": c.sql("SELECT * EXCLUDE (primer_partido, ultimo_partido), cast(primer_partido AS VARCHAR) AS primer_partido FROM carrera WHERE pj >= 100 ORDER BY ppp DESC").df().to_dict("records")})
-    guardar("trayectorias", {"temporadas": t.to_dict("records")})
+    guardar("trayectorias", {"temporadas": t[t.entrenador.isin(nombres)].to_dict("records")})
     guardar("construccion", construccion(c).to_dict("records"))
+    guardar("campeones_elo", c.sql("""
+        SELECT ca.temporada, ca.club, ca.pts, ca.entrenador, last(e.elo ORDER BY e.fecha) AS elo_fin,
+               avg(e.pts - e.pts_esperados_mercado) AS sobre_mercado_pp,
+               (SELECT t2.pts FROM tabla t2 WHERE t2.temporada = ca.temporada AND t2.puesto = 2 LIMIT 1) AS pts_segundo
+        FROM campeones ca JOIN ep e ON e.temporada = ca.temporada AND e.club = ca.club
+        WHERE ca.temporada IN (SELECT temporada FROM temporadas_completas)
+        GROUP BY ALL ORDER BY elo_fin DESC""").df().to_dict("records"))
     guardar("mercado", mercado(c, nombres))
     guardar("clusteres", clusteres(c))
     guardar("simulacion", simulacion(c))

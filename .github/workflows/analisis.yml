@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ["src/**", "sql/**", "tests/**", "entradas/**", "Dockerfile", "requirements.txt", ".github/workflows/analisis.yml"]
+    paths: ["src/**", "sql/**", "tests/**", "entradas/**", "Dockerfile", "requirements-pipeline.txt", ".github/workflows/analisis.yml"]
   schedule:
     - cron: "23 9 * * 2"   # martes, después de la jornada
 permissions:
