@@ -1,0 +1,9 @@
+{
+ "periodo": "2013-14 a la fecha (fuera de la calibración del Elo)",
+ "n": 5040,
+ "error_cuadratico": {
+  "constante": 0.18722490906084657,
+  "elo": 0.15710440292056518,
+  "mercado": 0.1511243072973783
+ }
+}

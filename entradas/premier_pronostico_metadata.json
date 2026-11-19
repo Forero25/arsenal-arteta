@@ -1,0 +1,20 @@
+{
+ "fuente": "openfootball/football.json (CC0) y Wikipedia (CC BY-SA 4.0)",
+ "semilla": 2026,
+ "temporada": "2026-27",
+ "datos_hasta": "2026-11-07",
+ "jornadas_completas": 10,
+ "partidos_jugados": 100,
+ "partidos_pendientes": 280,
+ "simulaciones": 20000,
+ "localia": 1.1906,
+ "ascendido_ataque": 0.8267,
+ "ascendido_defensa": 1.1618,
+ "fuente_resultados": "openfootball (CC0) y Wikipedia (CC BY-SA 4.0) para la temporada en curso",
+ "resultados_wikipedia": 100,
+ "coinciden_con_openfootball": 50,
+ "completados_desde_wikipedia": 50,
+ "wikipedia_actualizada_hasta": "8 November 2026",
+ "partidos_historicos": 3140,
+ "primera_temporada": "2018-19"
+}

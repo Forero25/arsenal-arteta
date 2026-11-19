@@ -1,0 +1,202 @@
+[
+ {
+  "equipo": "Arsenal FC",
+  "pj": 10,
+  "puntos": 27,
+  "puntos_esperados": 80.7208,
+  "p_campeon": 0.605,
+  "p_top4": 0.993,
+  "p_descenso": 0.0,
+  "ascendido": false
+ },
+ {
+  "equipo": "Manchester City FC",
+  "pj": 10,
+  "puntos": 21,
+  "puntos_esperados": 76.6727,
+  "p_campeon": 0.3154,
+  "p_top4": 0.9738,
+  "p_descenso": 0.0,
+  "ascendido": false
+ },
+ {
+  "equipo": "Liverpool FC",
+  "pj": 10,
+  "puntos": 18,
+  "puntos_esperados": 68.8382,
+  "p_campeon": 0.0515,
+  "p_top4": 0.806,
+  "p_descenso": 0.0,
+  "ascendido": false
+ },
+ {
+  "equipo": "Brighton & Hove Albion FC",
+  "pj": 10,
+  "puntos": 22,
+  "puntos_esperados": 65.4862,
+  "p_campeon": 0.0248,
+  "p_top4": 0.6526,
+  "p_descenso": 0.0,
+  "ascendido": false
+ },
+ {
+  "equipo": "Chelsea FC",
+  "pj": 10,
+  "puntos": 16,
+  "puntos_esperados": 58.5582,
+  "p_campeon": 0.0022,
+  "p_top4": 0.2172,
+  "p_descenso": 0.002,
+  "ascendido": false
+ },
+ {
+  "equipo": "Aston Villa FC",
+  "pj": 10,
+  "puntos": 13,
+  "puntos_esperados": 54.1388,
+  "p_campeon": 0.0004,
+  "p_top4": 0.0777,
+  "p_descenso": 0.0126,
+  "ascendido": false
+ },
+ {
+  "equipo": "Brentford FC",
+  "pj": 10,
+  "puntos": 14,
+  "puntos_esperados": 54.0831,
+  "p_campeon": 0.0004,
+  "p_top4": 0.0808,
+  "p_descenso": 0.0114,
+  "ascendido": false
+ },
+ {
+  "equipo": "AFC Bournemouth",
+  "pj": 10,
+  "puntos": 15,
+  "puntos_esperados": 52.8925,
+  "p_campeon": 0.0002,
+  "p_top4": 0.057,
+  "p_descenso": 0.0181,
+  "ascendido": false
+ },
+ {
+  "equipo": "Newcastle United FC",
+  "pj": 10,
+  "puntos": 12,
+  "puntos_esperados": 51.7776,
+  "p_campeon": 0.0,
+  "p_top4": 0.0429,
+  "p_descenso": 0.025,
+  "ascendido": false
+ },
+ {
+  "equipo": "Leeds United FC",
+  "pj": 10,
+  "puntos": 14,
+  "puntos_esperados": 51.273,
+  "p_campeon": 0.0,
+  "p_top4": 0.0352,
+  "p_descenso": 0.0295,
+  "ascendido": false
+ },
+ {
+  "equipo": "Tottenham Hotspur FC",
+  "pj": 10,
+  "puntos": 12,
+  "puntos_esperados": 49.386,
+  "p_campeon": 0.0,
+  "p_top4": 0.0223,
+  "p_descenso": 0.0528,
+  "ascendido": false
+ },
+ {
+  "equipo": "Everton FC",
+  "pj": 10,
+  "puntos": 16,
+  "puntos_esperados": 48.9984,
+  "p_campeon": 0.0,
+  "p_top4": 0.0164,
+  "p_descenso": 0.0524,
+  "ascendido": false
+ },
+ {
+  "equipo": "Manchester United FC",
+  "pj": 10,
+  "puntos": 8,
+  "puntos_esperados": 46.8826,
+  "p_campeon": 0.0,
+  "p_top4": 0.0086,
+  "p_descenso": 0.102,
+  "ascendido": false
+ },
+ {
+  "equipo": "Sunderland AFC",
+  "pj": 10,
+  "puntos": 8,
+  "puntos_esperados": 45.2638,
+  "p_campeon": 0.0,
+  "p_top4": 0.0048,
+  "p_descenso": 0.155,
+  "ascendido": false
+ },
+ {
+  "equipo": "Nottingham Forest FC",
+  "pj": 10,
+  "puntos": 9,
+  "puntos_esperados": 45.0274,
+  "p_campeon": 0.0,
+  "p_top4": 0.0046,
+  "p_descenso": 0.156,
+  "ascendido": false
+ },
+ {
+  "equipo": "Fulham FC",
+  "pj": 10,
+  "puntos": 10,
+  "puntos_esperados": 45.0134,
+  "p_campeon": 0.0,
+  "p_top4": 0.0046,
+  "p_descenso": 0.1514,
+  "ascendido": false
+ },
+ {
+  "equipo": "Hull City AFC",
+  "pj": 10,
+  "puntos": 11,
+  "puntos_esperados": 42.2177,
+  "p_campeon": 0.0,
+  "p_top4": 0.0018,
+  "p_descenso": 0.2732,
+  "ascendido": true
+ },
+ {
+  "equipo": "Crystal Palace FC",
+  "pj": 10,
+  "puntos": 7,
+  "puntos_esperados": 39.9158,
+  "p_campeon": 0.0,
+  "p_top4": 0.0006,
+  "p_descenso": 0.4339,
+  "ascendido": false
+ },
+ {
+  "equipo": "Coventry City FC",
+  "pj": 10,
+  "puntos": 9,
+  "puntos_esperados": 35.3636,
+  "p_campeon": 0.0,
+  "p_top4": 0.0,
+  "p_descenso": 0.7167,
+  "ascendido": true
+ },
+ {
+  "equipo": "Ipswich Town FC",
+  "pj": 10,
+  "puntos": 11,
+  "puntos_esperados": 33.6927,
+  "p_campeon": 0.0,
+  "p_top4": 0.0,
+  "p_descenso": 0.8079,
+  "ascendido": true
+ }
+]

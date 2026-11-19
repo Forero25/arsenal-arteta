@@ -1,0 +1,632 @@
+[
+ {
+  "entrenador": "Jürgen Klopp",
+  "club": "Liverpool",
+  "desde": "2015-10-08",
+  "elo_llegada": 1528.355776020433,
+  "elo_pico": 1679.8009659337854,
+  "subida": 151.44518991335235,
+  "temporada_pico": 5,
+  "pj": 334.0
+ },
+ {
+  "entrenador": "Roberto Mancini",
+  "club": "Manchester City",
+  "desde": "2009-12-19",
+  "elo_llegada": 1488.3750551589842,
+  "elo_pico": 1635.6750604525432,
+  "subida": 147.30000529355902,
+  "temporada_pico": 3,
+  "pj": 134.0
+ },
+ {
+  "entrenador": "Andoni Iraola",
+  "club": "Bournemouth",
+  "desde": "2023-06-19",
+  "elo_llegada": 1318.2950350101726,
+  "elo_pico": 1455.301970763553,
+  "subida": 137.0069357533805,
+  "temporada_pico": 3,
+  "pj": 114.0
+ },
+ {
+  "entrenador": "Eddie Howe",
+  "club": "Newcastle United",
+  "desde": "2021-11-08",
+  "elo_llegada": 1370.9981765604248,
+  "elo_pico": 1507.1577874101645,
+  "subida": 136.1596108497397,
+  "temporada_pico": 4,
+  "pj": 179.0
+ },
+ {
+  "entrenador": "Pep Guardiola",
+  "club": "Manchester City",
+  "desde": "2016-07-01",
+  "elo_llegada": 1571.7166830458134,
+  "elo_pico": 1706.419515009705,
+  "subida": 134.70283196389164,
+  "temporada_pico": 3,
+  "pj": 380.0
+ },
+ {
+  "entrenador": "Thomas Frank",
+  "club": "Brentford",
+  "desde": "2018-10-16",
+  "elo_llegada": 1300.2472145775002,
+  "elo_pico": 1432.1759689145304,
+  "subida": 131.9287543370301,
+  "temporada_pico": 4,
+  "pj": 152.0
+ },
+ {
+  "entrenador": "Arsène Wenger",
+  "club": "Arsenal",
+  "desde": "1996-10-01",
+  "elo_llegada": 1565.3961900984714,
+  "elo_pico": 1695.1852448569143,
+  "subida": 129.78905475844294,
+  "temporada_pico": 8,
+  "pj": 828.0
+ },
+ {
+  "entrenador": "Marco Silva",
+  "club": "Fulham",
+  "desde": "2021-07-01",
+  "elo_llegada": 1290.3231613551977,
+  "elo_pico": 1413.5366842873411,
+  "subida": 123.2135229321434,
+  "temporada_pico": 3,
+  "pj": 152.0
+ },
+ {
+  "entrenador": "Sam Allardyce",
+  "club": "Bolton Wanderers",
+  "desde": "1999-10-19",
+  "elo_llegada": 1385.6331397231227,
+  "elo_pico": 1501.2333188148218,
+  "subida": 115.60017909169915,
+  "temporada_pico": 5,
+  "pj": 226.0
+ },
+ {
+  "entrenador": "David Moyes",
+  "club": "Everton",
+  "desde": "2002-03-15",
+  "elo_llegada": 1440.3694494554802,
+  "elo_pico": 1552.8442350739488,
+  "subida": 112.47478561846856,
+  "temporada_pico": 9,
+  "pj": 427.0
+ },
+ {
+  "entrenador": "Alan Pardew",
+  "club": "Newcastle United",
+  "desde": "2010-12-09",
+  "elo_llegada": 1364.7605616074493,
+  "elo_pico": 1475.8919079740176,
+  "subida": 111.13134636656832,
+  "temporada_pico": 2,
+  "pj": 156.0
+ },
+ {
+  "entrenador": "Unai Emery",
+  "club": "Aston Villa",
+  "desde": "2022-10-24",
+  "elo_llegada": 1390.1393501665539,
+  "elo_pico": 1500.530058030233,
+  "subida": 110.39070786367915,
+  "temporada_pico": 3,
+  "pj": 150.0
+ },
+ {
+  "entrenador": "Mikel Arteta",
+  "club": "Arsenal",
+  "desde": "2019-12-22",
+  "elo_llegada": 1507.7357457908083,
+  "elo_pico": 1617.5213940109604,
+  "subida": 109.7856482201521,
+  "temporada_pico": 5,
+  "pj": 258.0
+ },
+ {
+  "entrenador": "José Mourinho",
+  "club": "Chelsea",
+  "desde": "2004-06-02",
+  "elo_llegada": 1596.4356215034563,
+  "elo_pico": 1703.9738466070871,
+  "subida": 107.5382251036308,
+  "temporada_pico": 2,
+  "pj": 120.0
+ },
+ {
+  "entrenador": "Bobby Robson",
+  "club": "Newcastle United",
+  "desde": "1999-09-02",
+  "elo_llegada": 1461.053374598021,
+  "elo_pico": 1565.479485282468,
+  "subida": 104.42611068444694,
+  "temporada_pico": 4,
+  "pj": 188.0
+ },
+ {
+  "entrenador": "Graeme Souness",
+  "club": "Blackburn Rovers",
+  "desde": "2000-03-14",
+  "elo_llegada": 1385.6331397231227,
+  "elo_pico": 1487.7597918503357,
+  "subida": 102.12665212721299,
+  "temporada_pico": 2,
+  "pj": 118.0
+ },
+ {
+  "entrenador": "Harry Redknapp",
+  "club": "Tottenham Hotspur",
+  "desde": "2008-10-26",
+  "elo_llegada": 1451.9343163300753,
+  "elo_pico": 1549.4913033604262,
+  "subida": 97.55698703035091,
+  "temporada_pico": 4,
+  "pj": 144.0
+ },
+ {
+  "entrenador": "Nuno Espírito Santo",
+  "club": "Wolverhampton Wanderers",
+  "desde": "2017-05-31",
+  "elo_llegada": 1371.1794030894864,
+  "elo_pico": 1468.6875035535804,
+  "subida": 97.50810046409401,
+  "temporada_pico": 2,
+  "pj": 114.0
+ },
+ {
+  "entrenador": "Rafael Benítez",
+  "club": "Liverpool",
+  "desde": "2004-06-16",
+  "elo_llegada": 1568.3920255732587,
+  "elo_pico": 1664.4139081387636,
+  "subida": 96.02188256550494,
+  "temporada_pico": 5,
+  "pj": 228.0
+ },
+ {
+  "entrenador": "Brendan Rodgers",
+  "club": "Liverpool",
+  "desde": "2012-06-01",
+  "elo_llegada": 1511.5759669756173,
+  "elo_pico": 1606.992618860753,
+  "subida": 95.4166518851357,
+  "temporada_pico": 2,
+  "pj": 122.0
+ },
+ {
+  "entrenador": "Tony Pulis",
+  "club": "Stoke City",
+  "desde": "2006-06-15",
+  "elo_llegada": 1345.8554802631934,
+  "elo_pico": 1437.508466610286,
+  "subida": 91.65298634709256,
+  "temporada_pico": 3,
+  "pj": 190.0
+ },
+ {
+  "entrenador": "Martin O'Neill",
+  "club": "Aston Villa",
+  "desde": "2006-08-05",
+  "elo_llegada": 1450.9780343327486,
+  "elo_pico": 1540.4572390789472,
+  "subida": 89.47920474619855,
+  "temporada_pico": 4,
+  "pj": 152.0
+ },
+ {
+  "entrenador": "Harry Redknapp",
+  "club": "Portsmouth",
+  "desde": "2005-12-07",
+  "elo_llegada": 1396.4252924610971,
+  "elo_pico": 1485.7033202749228,
+  "subida": 89.2780278138257,
+  "temporada_pico": 4,
+  "pj": 107.0
+ },
+ {
+  "entrenador": "Mauricio Pochettino",
+  "club": "Tottenham Hotspur",
+  "desde": "2014-05-27",
+  "elo_llegada": 1535.9548222456203,
+  "elo_pico": 1622.2121725802615,
+  "subida": 86.25735033464116,
+  "temporada_pico": 3,
+  "pj": 202.0
+ },
+ {
+  "entrenador": "Sean Dyche",
+  "club": "Burnley",
+  "desde": "2012-10-30",
+  "elo_llegada": 1344.753422556945,
+  "elo_pico": 1430.2317307197054,
+  "subida": 85.47830816276041,
+  "temporada_pico": 6,
+  "pj": 258.0
+ },
+ {
+  "entrenador": "Graham Potter",
+  "club": "Brighton & Hove Albion",
+  "desde": "2019-05-20",
+  "elo_llegada": 1349.0666427285655,
+  "elo_pico": 1433.6921739409213,
+  "subida": 84.62553121235578,
+  "temporada_pico": 4,
+  "pj": 120.0
+ },
+ {
+  "entrenador": "Brian Little",
+  "club": "Aston Villa",
+  "desde": "1994-11-25",
+  "elo_llegada": 1459.2373888675263,
+  "elo_pico": 1541.0905109103574,
+  "subida": 81.85312204283105,
+  "temporada_pico": 3,
+  "pj": 130.0
+ },
+ {
+  "entrenador": "Martin O'Neill",
+  "club": "Leicester City",
+  "desde": "1995-12-21",
+  "elo_llegada": 1424.16398687124,
+  "elo_pico": 1505.0837311554549,
+  "subida": 80.91974428421486,
+  "temporada_pico": 4,
+  "pj": 152.0
+ },
+ {
+  "entrenador": "Roy Evans",
+  "club": "Liverpool",
+  "desde": "1994-01-28",
+  "elo_llegada": 1529.4584996116705,
+  "elo_pico": 1605.435605008015,
+  "subida": 75.97710539634454,
+  "temporada_pico": 3,
+  "pj": 172.0
+ },
+ {
+  "entrenador": "Peter Reid",
+  "club": "Sunderland",
+  "desde": "1995-03-29",
+  "elo_llegada": 1424.16398687124,
+  "elo_pico": 1498.1459713322408,
+  "subida": 73.98198446100082,
+  "temporada_pico": 5,
+  "pj": 161.0
+ },
+ {
+  "entrenador": "Martin Jol",
+  "club": "Tottenham Hotspur",
+  "desde": "2004-11-05",
+  "elo_llegada": 1451.7752117193957,
+  "elo_pico": 1524.6932646591176,
+  "subida": 72.91805293972197,
+  "temporada_pico": 2,
+  "pj": 113.0
+ },
+ {
+  "entrenador": "Brendan Rodgers",
+  "club": "Leicester City",
+  "desde": "2019-02-27",
+  "elo_llegada": 1426.079178357036,
+  "elo_pico": 1498.9793849231025,
+  "subida": 72.90020656606657,
+  "temporada_pico": 3,
+  "pj": 152.0
+ },
+ {
+  "entrenador": "Gerry Francis",
+  "club": "Tottenham Hotspur",
+  "desde": "1994-11-15",
+  "elo_llegada": 1465.5336293218427,
+  "elo_pico": 1538.4198203352114,
+  "subida": 72.88619101336872,
+  "temporada_pico": 2,
+  "pj": 119.0
+ },
+ {
+  "entrenador": "David O'Leary",
+  "club": "Leeds United",
+  "desde": "1998-10-01",
+  "elo_llegada": 1523.977851553324,
+  "elo_pico": 1587.2351480508557,
+  "subida": 63.2572964975318,
+  "temporada_pico": 3,
+  "pj": 145.0
+ },
+ {
+  "entrenador": "Manuel Pellegrini",
+  "club": "Manchester City",
+  "desde": "2013-06-14",
+  "elo_llegada": 1601.2944031092234,
+  "elo_pico": 1664.20078639093,
+  "subida": 62.90638328170667,
+  "temporada_pico": 1,
+  "pj": 114.0
+ },
+ {
+  "entrenador": "Eddie Howe",
+  "club": "Bournemouth",
+  "desde": "2012-10-12",
+  "elo_llegada": 1339.5918294280737,
+  "elo_pico": 1401.4789825075466,
+  "subida": 61.88715307947291,
+  "temporada_pico": 4,
+  "pj": 190.0
+ },
+ {
+  "entrenador": "David Moyes",
+  "club": "West Ham United",
+  "desde": "2019-12-29",
+  "elo_llegada": 1407.0553813362037,
+  "elo_pico": 1468.7305579775896,
+  "subida": 61.67517664138586,
+  "temporada_pico": 3,
+  "pj": 171.0
+ },
+ {
+  "entrenador": "Jim Smith",
+  "club": "Derby County",
+  "desde": "1995-06-15",
+  "elo_llegada": 1424.16398687124,
+  "elo_pico": 1484.3692701829962,
+  "subida": 60.20528331175615,
+  "temporada_pico": 3,
+  "pj": 197.0
+ },
+ {
+  "entrenador": "Bryan Robson",
+  "club": "Middlesbrough",
+  "desde": "1994-05-31",
+  "elo_llegada": 1403.7713859776013,
+  "elo_pico": 1463.3857111600853,
+  "subida": 59.61432518248398,
+  "temporada_pico": 5,
+  "pj": 168.0
+ },
+ {
+  "entrenador": "Kevin Keegan",
+  "club": "Manchester City",
+  "desde": "2001-05-24",
+  "elo_llegada": 1410.738942455354,
+  "elo_pico": 1467.2841280016864,
+  "subida": 56.545185546332505,
+  "temporada_pico": 3,
+  "pj": 105.0
+ },
+ {
+  "entrenador": "Sam Allardyce",
+  "club": "West Ham United",
+  "desde": "2011-06-01",
+  "elo_llegada": 1364.17106382829,
+  "elo_pico": 1418.4501709048327,
+  "subida": 54.27910707654269,
+  "temporada_pico": 3,
+  "pj": 114.0
+ },
+ {
+  "entrenador": "Claudio Ranieri",
+  "club": "Chelsea",
+  "desde": "2000-09-18",
+  "elo_llegada": 1560.3055071185047,
+  "elo_pico": 1613.5625085987201,
+  "subida": 53.25700148021542,
+  "temporada_pico": 4,
+  "pj": 146.0
+ },
+ {
+  "entrenador": "Chris Coleman",
+  "club": "Fulham",
+  "desde": "2003-04-17",
+  "elo_llegada": 1417.933976252735,
+  "elo_pico": 1468.422712987342,
+  "subida": 50.48873673460707,
+  "temporada_pico": 2,
+  "pj": 152.0
+ },
+ {
+  "entrenador": "Roy Hodgson",
+  "club": "Crystal Palace",
+  "desde": "2017-09-12",
+  "elo_llegada": 1376.945835353146,
+  "elo_pico": 1426.9515906200315,
+  "subida": 50.005755266885444,
+  "temporada_pico": 2,
+  "pj": 148.0
+ },
+ {
+  "entrenador": "Gordon Strachan",
+  "club": "Coventry City",
+  "desde": "1996-11-05",
+  "elo_llegada": 1441.8229632880114,
+  "elo_pico": 1491.4929432662534,
+  "subida": 49.669979978242054,
+  "temporada_pico": 2,
+  "pj": 178.0
+ },
+ {
+  "entrenador": "Alex McLeish",
+  "club": "Birmingham City",
+  "desde": "2007-11-28",
+  "elo_llegada": 1358.4266093419162,
+  "elo_pico": 1407.827791909316,
+  "subida": 49.4011825673997,
+  "temporada_pico": 3,
+  "pj": 100.0
+ },
+ {
+  "entrenador": "Mark Hughes",
+  "club": "Blackburn Rovers",
+  "desde": "2004-09-15",
+  "elo_llegada": 1457.6465577827219,
+  "elo_pico": 1506.964763550227,
+  "subida": 49.318205767505106,
+  "temporada_pico": 4,
+  "pj": 147.0
+ },
+ {
+  "entrenador": "Steve Bruce",
+  "club": "Birmingham City",
+  "desde": "2001-12-12",
+  "elo_llegada": 1410.738942455354,
+  "elo_pico": 1453.0929834394005,
+  "subida": 42.354040984046605,
+  "temporada_pico": 2,
+  "pj": 165.0
+ },
+ {
+  "entrenador": "John Gregory",
+  "club": "Aston Villa",
+  "desde": "1998-02-25",
+  "elo_llegada": 1501.5035461366444,
+  "elo_pico": 1536.6441394179792,
+  "subida": 35.14059328133476,
+  "temporada_pico": 3,
+  "pj": 148.0
+ },
+ {
+  "entrenador": "Walter Smith",
+  "club": "Everton",
+  "desde": "1998-07-01",
+  "elo_llegada": 1461.6274573017863,
+  "elo_pico": 1495.9931437785317,
+  "subida": 34.365686476745395,
+  "temporada_pico": 2,
+  "pj": 143.0
+ },
+ {
+  "entrenador": "Ralph Hasenhüttl",
+  "club": "Southampton",
+  "desde": "2018-12-06",
+  "elo_llegada": 1387.0643355770478,
+  "elo_pico": 1420.372867990451,
+  "subida": 33.3085324134031,
+  "temporada_pico": 2,
+  "pj": 151.0
+ },
+ {
+  "entrenador": "Roberto Martínez",
+  "club": "Everton",
+  "desde": "2013-06-05",
+  "elo_llegada": 1528.7237523437398,
+  "elo_pico": 1557.7294770004194,
+  "subida": 29.005724656679604,
+  "temporada_pico": 1,
+  "pj": 113.0
+ },
+ {
+  "entrenador": "Tony Pulis",
+  "club": "West Bromwich Albion",
+  "desde": "2015-01-01",
+  "elo_llegada": 1382.185842257004,
+  "elo_pico": 1410.0788940970026,
+  "subida": 27.893051839998634,
+  "temporada_pico": 1,
+  "pj": 107.0
+ },
+ {
+  "entrenador": "Mark Hughes",
+  "club": "Stoke City",
+  "desde": "2013-05-30",
+  "elo_llegada": 1422.6800186386383,
+  "elo_pico": 1450.1093036952423,
+  "subida": 27.42928505660393,
+  "temporada_pico": 2,
+  "pj": 174.0
+ },
+ {
+  "entrenador": "David O'Leary",
+  "club": "Aston Villa",
+  "desde": "2003-05-20",
+  "elo_llegada": 1477.7988868166854,
+  "elo_pico": 1503.283205567014,
+  "subida": 25.48431875032861,
+  "temporada_pico": 1,
+  "pj": 114.0
+ },
+ {
+  "entrenador": "Gérard Houllier",
+  "club": "Liverpool",
+  "desde": "1998-07-01",
+  "elo_llegada": 1583.3440326274058,
+  "elo_pico": 1600.2250760410693,
+  "subida": 16.88104341366352,
+  "temporada_pico": 3,
+  "pj": 121.0
+ },
+ {
+  "entrenador": "Harry Redknapp",
+  "club": "West Ham United",
+  "desde": "1994-08-10",
+  "elo_llegada": 1486.1689947191817,
+  "elo_pico": 1500.7785427890708,
+  "subida": 14.609548069889115,
+  "temporada_pico": 6,
+  "pj": 269.0
+ },
+ {
+  "entrenador": "Ole Gunnar Solskjær",
+  "club": "Manchester United",
+  "desde": "2018-12-19",
+  "elo_llegada": 1559.552309579203,
+  "elo_pico": 1569.341672060298,
+  "subida": 9.78936248109494,
+  "temporada_pico": 3,
+  "pj": 109.0
+ },
+ {
+  "entrenador": "Mick McCarthy",
+  "club": "Wolverhampton Wanderers",
+  "desde": "2006-08-05",
+  "elo_llegada": 1379.0492808511656,
+  "elo_pico": 1384.3361221883345,
+  "subida": 5.28684133716888,
+  "temporada_pico": 2,
+  "pj": 101.0
+ },
+ {
+  "entrenador": "Steve McClaren",
+  "club": "Middlesbrough",
+  "desde": "2001-06-12",
+  "elo_llegada": 1481.9399882033292,
+  "elo_pico": 1486.2075951959348,
+  "subida": 4.267606992605579,
+  "temporada_pico": 4,
+  "pj": 190.0
+ },
+ {
+  "entrenador": "Roberto Martínez",
+  "club": "Wigan Athletic",
+  "desde": "2009-06-15",
+  "elo_llegada": 1419.2056669203187,
+  "elo_pico": 1404.5126782558566,
+  "subida": -14.692988664462064,
+  "temporada_pico": 3,
+  "pj": 152.0
+ },
+ {
+  "entrenador": "Gareth Southgate",
+  "club": "Middlesbrough",
+  "desde": "2006-06-07",
+  "elo_llegada": 1469.0160986733638,
+  "elo_pico": 1448.9734341696899,
+  "subida": -20.042664503673905,
+  "temporada_pico": 1,
+  "pj": 114.0
+ },
+ {
+  "entrenador": "Paul Lambert",
+  "club": "Aston Villa",
+  "desde": "2012-06-02",
+  "elo_llegada": 1443.627568732741,
+  "elo_pico": 1422.2452485843153,
+  "subida": -21.382320148425833,
+  "temporada_pico": 1,
+  "pj": 101.0
+ }
+]

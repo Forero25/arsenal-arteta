@@ -1,0 +1,25 @@
+name: Análisis
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["src/**", "sql/**", "tests/**", "entradas/**", "Dockerfile", "requirements.txt", ".github/workflows/analisis.yml"]
+  schedule:
+    - cron: "23 9 * * 2"   # martes, después de la jornada
+permissions:
+  contents: write
+jobs:
+  correr:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Construir la imagen
+        run: docker build -t arsenal-arteta .
+      - name: Correr el pipeline y las pruebas dentro del contenedor
+        run: docker run --rm -v "$PWD/data:/app/data" -v "$PWD/resultados:/app/resultados" -v "$PWD/publicado:/app/publicado" arsenal-arteta
+      - name: Guardar resultados
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add resultados publicado
+          git diff --cached --quiet || (git commit -m "Resultados actualizados" && git push)
