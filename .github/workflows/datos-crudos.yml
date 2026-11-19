@@ -1,0 +1,15 @@
+name: Datos crudos
+on:
+  workflow_dispatch:
+  push:
+    paths: ["src/descargar.py", ".github/workflows/datos-crudos.yml"]
+jobs:
+  bajar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: python src/descargar.py
+      - uses: actions/upload-artifact@v4
+        with: {name: crudos, path: data/raw, retention-days: 30}
