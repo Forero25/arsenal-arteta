@@ -287,6 +287,16 @@ def main():
                         "carrera": c.sql("SELECT * EXCLUDE (primer_partido, ultimo_partido), cast(primer_partido AS VARCHAR) AS primer_partido FROM carrera WHERE pj >= 100 ORDER BY ppp DESC").df().to_dict("records")})
     guardar("trayectorias", {"temporadas": t[t.entrenador.isin(nombres)].to_dict("records")})
     guardar("construccion", construccion(c).to_dict("records"))
+    # Elo al final de cada temporada de gestión, en la etapa más larga de cada grande y de Arteta
+    curvas = []
+    for n in nombres:
+        d = t[t.entrenador == n]
+        club, desde = d.groupby(["club", "desde"]).pj.sum().idxmax()
+        d = d[(d.club == club) & (d.desde == desde) & (d.pj >= 10)]
+        curvas.append({"entrenador": n, "club": club, "desde": desde,
+                       "puntos": [{"x": int(r.temporada_gestion), "y": float(r.elo_fin), "ppp": float(r.ppp),
+                                   "temporada": int(r.temporada), "completa": bool(r.completa)} for r in d.itertuples()]})
+    guardar("curvas", curvas)
     guardar("campeones_elo", c.sql("""
         SELECT ca.temporada, ca.club, ca.pts, ca.entrenador, last(e.elo ORDER BY e.fecha) AS elo_fin,
                avg(e.pts - e.pts_esperados_mercado) AS sobre_mercado_pp,

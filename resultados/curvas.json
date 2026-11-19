@@ -1,0 +1,548 @@
+[
+ {
+  "entrenador": "Alex Ferguson",
+  "club": "Manchester United",
+  "desde": "1986-11-06",
+  "puntos": [
+   {
+    "x": 8,
+    "y": 1607.615691254,
+    "ppp": 2.19047619,
+    "temporada": 1993,
+    "completa": true
+   },
+   {
+    "x": 9,
+    "y": 1644.473271823,
+    "ppp": 2.095238095,
+    "temporada": 1994,
+    "completa": true
+   },
+   {
+    "x": 10,
+    "y": 1651.326135469,
+    "ppp": 2.157894737,
+    "temporada": 1995,
+    "completa": true
+   },
+   {
+    "x": 11,
+    "y": 1655.141278349,
+    "ppp": 1.973684211,
+    "temporada": 1996,
+    "completa": true
+   },
+   {
+    "x": 12,
+    "y": 1659.842580597,
+    "ppp": 2.026315789,
+    "temporada": 1997,
+    "completa": true
+   },
+   {
+    "x": 13,
+    "y": 1671.11806269,
+    "ppp": 2.078947368,
+    "temporada": 1998,
+    "completa": true
+   },
+   {
+    "x": 14,
+    "y": 1695.452870021,
+    "ppp": 2.394736842,
+    "temporada": 1999,
+    "completa": true
+   },
+   {
+    "x": 15,
+    "y": 1691.330919599,
+    "ppp": 2.105263158,
+    "temporada": 2000,
+    "completa": true
+   },
+   {
+    "x": 16,
+    "y": 1670.135251092,
+    "ppp": 2.026315789,
+    "temporada": 2001,
+    "completa": true
+   },
+   {
+    "x": 17,
+    "y": 1679.080130288,
+    "ppp": 2.184210526,
+    "temporada": 2002,
+    "completa": true
+   },
+   {
+    "x": 18,
+    "y": 1636.767333029,
+    "ppp": 1.973684211,
+    "temporada": 2003,
+    "completa": true
+   },
+   {
+    "x": 19,
+    "y": 1640.049819311,
+    "ppp": 2.026315789,
+    "temporada": 2004,
+    "completa": true
+   },
+   {
+    "x": 20,
+    "y": 1652.106117555,
+    "ppp": 2.184210526,
+    "temporada": 2005,
+    "completa": true
+   },
+   {
+    "x": 21,
+    "y": 1692.761554657,
+    "ppp": 2.342105263,
+    "temporada": 2006,
+    "completa": true
+   },
+   {
+    "x": 22,
+    "y": 1691.870011741,
+    "ppp": 2.289473684,
+    "temporada": 2007,
+    "completa": true
+   },
+   {
+    "x": 23,
+    "y": 1691.137318776,
+    "ppp": 2.368421053,
+    "temporada": 2008,
+    "completa": true
+   },
+   {
+    "x": 24,
+    "y": 1683.333138153,
+    "ppp": 2.236842105,
+    "temporada": 2009,
+    "completa": true
+   },
+   {
+    "x": 25,
+    "y": 1665.050935525,
+    "ppp": 2.105263158,
+    "temporada": 2010,
+    "completa": true
+   },
+   {
+    "x": 26,
+    "y": 1671.789090695,
+    "ppp": 2.342105263,
+    "temporada": 2011,
+    "completa": true
+   },
+   {
+    "x": 27,
+    "y": 1679.316985162,
+    "ppp": 2.342105263,
+    "temporada": 2012,
+    "completa": true
+   }
+  ]
+ },
+ {
+  "entrenador": "Arsène Wenger",
+  "club": "Arsenal",
+  "desde": "1996-10-01",
+  "puntos": [
+   {
+    "x": 1,
+    "y": 1586.536908291,
+    "ppp": 1.7,
+    "temporada": 1996,
+    "completa": true
+   },
+   {
+    "x": 2,
+    "y": 1627.706943029,
+    "ppp": 2.052631579,
+    "temporada": 1997,
+    "completa": true
+   },
+   {
+    "x": 3,
+    "y": 1654.506044033,
+    "ppp": 2.052631579,
+    "temporada": 1998,
+    "completa": true
+   },
+   {
+    "x": 4,
+    "y": 1652.490964518,
+    "ppp": 1.921052632,
+    "temporada": 1999,
+    "completa": true
+   },
+   {
+    "x": 5,
+    "y": 1622.726813901,
+    "ppp": 1.842105263,
+    "temporada": 2000,
+    "completa": true
+   },
+   {
+    "x": 6,
+    "y": 1666.937024027,
+    "ppp": 2.289473684,
+    "temporada": 2001,
+    "completa": true
+   },
+   {
+    "x": 7,
+    "y": 1659.555447806,
+    "ppp": 2.052631579,
+    "temporada": 2002,
+    "completa": true
+   },
+   {
+    "x": 8,
+    "y": 1695.185244857,
+    "ppp": 2.368421053,
+    "temporada": 2003,
+    "completa": true
+   },
+   {
+    "x": 9,
+    "y": 1694.940321093,
+    "ppp": 2.184210526,
+    "temporada": 2004,
+    "completa": true
+   },
+   {
+    "x": 10,
+    "y": 1636.105842195,
+    "ppp": 1.763157895,
+    "temporada": 2005,
+    "completa": true
+   },
+   {
+    "x": 11,
+    "y": 1614.727059452,
+    "ppp": 1.789473684,
+    "temporada": 2006,
+    "completa": true
+   },
+   {
+    "x": 12,
+    "y": 1643.396322512,
+    "ppp": 2.184210526,
+    "temporada": 2007,
+    "completa": true
+   },
+   {
+    "x": 13,
+    "y": 1628.886231286,
+    "ppp": 1.894736842,
+    "temporada": 2008,
+    "completa": true
+   },
+   {
+    "x": 14,
+    "y": 1616.462661472,
+    "ppp": 1.973684211,
+    "temporada": 2009,
+    "completa": true
+   },
+   {
+    "x": 15,
+    "y": 1600.416278454,
+    "ppp": 1.789473684,
+    "temporada": 2010,
+    "completa": true
+   },
+   {
+    "x": 16,
+    "y": 1586.879268109,
+    "ppp": 1.842105263,
+    "temporada": 2011,
+    "completa": true
+   },
+   {
+    "x": 17,
+    "y": 1595.904245037,
+    "ppp": 1.921052632,
+    "temporada": 2012,
+    "completa": true
+   },
+   {
+    "x": 18,
+    "y": 1600.130304925,
+    "ppp": 2.078947368,
+    "temporada": 2013,
+    "completa": true
+   },
+   {
+    "x": 19,
+    "y": 1609.410934689,
+    "ppp": 1.973684211,
+    "temporada": 2014,
+    "completa": true
+   },
+   {
+    "x": 20,
+    "y": 1594.315510055,
+    "ppp": 1.868421053,
+    "temporada": 2015,
+    "completa": true
+   },
+   {
+    "x": 21,
+    "y": 1589.549688637,
+    "ppp": 1.973684211,
+    "temporada": 2016,
+    "completa": true
+   },
+   {
+    "x": 22,
+    "y": 1546.456371903,
+    "ppp": 1.657894737,
+    "temporada": 2017,
+    "completa": true
+   }
+  ]
+ },
+ {
+  "entrenador": "José Mourinho",
+  "club": "Chelsea",
+  "desde": "2004-06-02",
+  "puntos": [
+   {
+    "x": 1,
+    "y": 1690.137003994,
+    "ppp": 2.5,
+    "temporada": 2004,
+    "completa": true
+   },
+   {
+    "x": 2,
+    "y": 1703.973846607,
+    "ppp": 2.394736842,
+    "temporada": 2005,
+    "completa": true
+   },
+   {
+    "x": 3,
+    "y": 1689.145020903,
+    "ppp": 2.184210526,
+    "temporada": 2006,
+    "completa": true
+   }
+  ]
+ },
+ {
+  "entrenador": "Jürgen Klopp",
+  "club": "Liverpool",
+  "desde": "2015-10-08",
+  "puntos": [
+   {
+    "x": 1,
+    "y": 1532.362544968,
+    "ppp": 1.6,
+    "temporada": 2015,
+    "completa": true
+   },
+   {
+    "x": 2,
+    "y": 1565.59116563,
+    "ppp": 2.0,
+    "temporada": 2016,
+    "completa": true
+   },
+   {
+    "x": 3,
+    "y": 1591.080127667,
+    "ppp": 1.973684211,
+    "temporada": 2017,
+    "completa": true
+   },
+   {
+    "x": 4,
+    "y": 1661.620494219,
+    "ppp": 2.552631579,
+    "temporada": 2018,
+    "completa": true
+   },
+   {
+    "x": 5,
+    "y": 1679.800965934,
+    "ppp": 2.605263158,
+    "temporada": 2019,
+    "completa": true
+   },
+   {
+    "x": 6,
+    "y": 1618.192160009,
+    "ppp": 1.815789474,
+    "temporada": 2020,
+    "completa": true
+   },
+   {
+    "x": 7,
+    "y": 1665.224898476,
+    "ppp": 2.421052632,
+    "temporada": 2021,
+    "completa": true
+   },
+   {
+    "x": 8,
+    "y": 1603.822406713,
+    "ppp": 1.763157895,
+    "temporada": 2022,
+    "completa": true
+   },
+   {
+    "x": 9,
+    "y": 1609.136970354,
+    "ppp": 2.157894737,
+    "temporada": 2023,
+    "completa": true
+   }
+  ]
+ },
+ {
+  "entrenador": "Mikel Arteta",
+  "club": "Arsenal",
+  "desde": "2019-12-22",
+  "puntos": [
+   {
+    "x": 1,
+    "y": 1518.052251581,
+    "ppp": 1.65,
+    "temporada": 2019,
+    "completa": true
+   },
+   {
+    "x": 2,
+    "y": 1515.943365033,
+    "ppp": 1.605263158,
+    "temporada": 2020,
+    "completa": true
+   },
+   {
+    "x": 3,
+    "y": 1515.502363228,
+    "ppp": 1.815789474,
+    "temporada": 2021,
+    "completa": true
+   },
+   {
+    "x": 4,
+    "y": 1566.781241553,
+    "ppp": 2.210526316,
+    "temporada": 2022,
+    "completa": true
+   },
+   {
+    "x": 5,
+    "y": 1617.521394011,
+    "ppp": 2.342105263,
+    "temporada": 2023,
+    "completa": true
+   },
+   {
+    "x": 6,
+    "y": 1603.575576808,
+    "ppp": 1.947368421,
+    "temporada": 2024,
+    "completa": true
+   },
+   {
+    "x": 7,
+    "y": 1613.1382573,
+    "ppp": 2.236842105,
+    "temporada": 2025,
+    "completa": true
+   },
+   {
+    "x": 8,
+    "y": 1602.75092749,
+    "ppp": 2.7,
+    "temporada": 2026,
+    "completa": false
+   }
+  ]
+ },
+ {
+  "entrenador": "Pep Guardiola",
+  "club": "Manchester City",
+  "desde": "2016-07-01",
+  "puntos": [
+   {
+    "x": 1,
+    "y": 1601.749185106,
+    "ppp": 2.052631579,
+    "temporada": 2016,
+    "completa": true
+   },
+   {
+    "x": 2,
+    "y": 1680.004074692,
+    "ppp": 2.631578947,
+    "temporada": 2017,
+    "completa": true
+   },
+   {
+    "x": 3,
+    "y": 1706.41951501,
+    "ppp": 2.578947368,
+    "temporada": 2018,
+    "completa": true
+   },
+   {
+    "x": 4,
+    "y": 1670.821451539,
+    "ppp": 2.131578947,
+    "temporada": 2019,
+    "completa": true
+   },
+   {
+    "x": 5,
+    "y": 1659.537074233,
+    "ppp": 2.263157895,
+    "temporada": 2020,
+    "completa": true
+   },
+   {
+    "x": 6,
+    "y": 1681.038746749,
+    "ppp": 2.447368421,
+    "temporada": 2021,
+    "completa": true
+   },
+   {
+    "x": 7,
+    "y": 1689.135532184,
+    "ppp": 2.342105263,
+    "temporada": 2022,
+    "completa": true
+   },
+   {
+    "x": 8,
+    "y": 1688.975419666,
+    "ppp": 2.394736842,
+    "temporada": 2023,
+    "completa": true
+   },
+   {
+    "x": 9,
+    "y": 1616.535468236,
+    "ppp": 1.868421053,
+    "temporada": 2024,
+    "completa": true
+   },
+   {
+    "x": 10,
+    "y": 1618.075816309,
+    "ppp": 2.052631579,
+    "temporada": 2025,
+    "completa": true
+   }
+  ]
+ }
+]
